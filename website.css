@@ -128,12 +128,14 @@ nav a:hover {
   margin: 0 auto;
   padding: 0 5rem;
   padding: 5rem 0;
+
 }
 
 /*About Section*/
 .about-section {
   background: none;
   position: relative;
+  top: 50px;
 }
 
 .about-content {
@@ -190,6 +192,7 @@ nav a:hover {
 .education-section {
   position: relative;
   padding: 5rem 0;
+  bottom: 50px;
 }
 /* Background image layer */
 .education-section::before {
@@ -216,7 +219,7 @@ nav a:hover {
 }
 
 .education-section h2 {
-  font-size: 2.0rem;
+  font-size: 3.0rem;
   margin-bottom: 4rem;
   color: purple;
   text-align: center;
@@ -298,6 +301,54 @@ nav a:hover {
   bottom: 20px
 }
 
+/*Projects*/
+
+.project-section {
+  position: relative;
+  padding: 5rem 0;
+  bottom: 150px;
+}
+
+.project-section h2 {
+  font-size: 3.0rem;
+  margin-bottom: 4rem;
+  color: purple;
+  text-align: center;
+  position: relative;
+}
+
+
+/*Experience*/
+
+.experience-section {
+  position: relative;
+  padding: 5rem 0;
+  bottom: 200px;
+}
+
+.experience-section h2 {
+  font-size: 3.0rem;
+  margin-bottom: 4rem;
+  color: purple;
+  text-align: center;
+  position: relative;
+}
+
+/*Skills*/
+
+.skills-section {
+  position: relative;
+  padding: 5rem 0;
+  bottom: 300px;
+}
+
+.skills-section h2 {
+  font-size: 3.0rem;
+  margin-bottom: 4rem;
+  color: purple;
+  text-align: center;
+  position: relative;
+}
 
 
 
