@@ -13,6 +13,10 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
 html {
   -ms-overflow-style: none;  /* Internet Explorer 10+ */
   scrollbar-width: none;  /* Firefox */
@@ -61,7 +65,7 @@ nav a:hover {
   width: 100%;
   height: 100vh;
   display: flex;
-  background-image: url('images/quantum.avif');
+  background-image: url('images/space.jpg');
   background-size: cover;               /* cover entire area */
   background-position: center;          /* center the image */
   background-repeat: no-repeat;         /* prevent tiling */
@@ -118,9 +122,8 @@ nav a:hover {
 .container1 {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
-  background-color: rgb(170, 116, 170);
-  padding: 2rem 0;
+  padding: 0 5rem;
+  padding: 5rem 0;
 }
 
 section {
@@ -148,7 +151,7 @@ section.visible {
   flex-wrap: wrap;
   font-size: 1.0rem;
   margin-bottom: 1.5rem;
-  color: white;
+  color: purple;
   text-align: left;
 }
 
@@ -166,8 +169,7 @@ section.visible {
   height: 300px;              
   object-fit: cover;          
   border-radius: 8px;         
-  border: 4px solid #e0e0e0;
-  box-shadow: 0 0 30px rgba(224, 224, 224, 0.4);
+  border: 6px solid white;
 }
 
 .profile-placeholder {
@@ -187,14 +189,14 @@ section.visible {
   margin: 0;                 
   text-align: left;
   position: relative;
-  left: 170px;
+  left: 280px;
   font-size: 3.0rem;
 }
 
 .about-text p {
   font-size: 1rem;
   line-height: 1.5;
-  color: white;
+  color: purple;
   text-align: left;
   margin-bottom: 1rem;
   position: relative;
