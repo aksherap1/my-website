@@ -211,15 +211,15 @@ nav a:hover {
   position: relative;
   text-align: center;
   margin-bottom: 3rem;
-  top: 20px;
-  right: 150px;
+  top: 60px;
+  right: 170px;
 }
 
 .edu-header::before {
   content: "";
   position: absolute;
-  width: 500px;
-  height: 260px;
+  width: 600px;
+  height: 360px;
   background: rgba(204, 33, 219, 0.225);
   border-radius: 50%;
   top: 50%;
@@ -255,19 +255,31 @@ nav a:hover {
   text-align: center;
   font-size: 0.95rem;
   z-index: 1;
+  bottom: 10px;
+  left: 150px;
 }
 
 .edu-coursework::before {
   content: "";
   position: absolute;
-  width: clamp(260px, 40vw, 320px);
-  height: clamp(260px, 40vw, 320px);
-  background: rgba(75, 0, 130, 0.12);
+  width: 530px;
+  height: 250px;
+  background: rgba(204, 33, 219, 0.225);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: -1;
+  border: 6px solid white;
+}
+
+.Coursework {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  z-index: 1;
+  font-size: 0.7rem;
+  color: black;
+  bottom: 20px
 }
 
 
