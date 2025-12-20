@@ -2,46 +2,299 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akshera Paladhi Electrical Engineer</title>
   <link rel="stylesheet" href="website.css">
 </head>
 <body>
+  <header>
+    <div class="logo">Akshera Paladhi</div>
+    <nav>
+      <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="Paladhi Resume.pdf" download="Akshera Paladhi Resume">Resume</a></li>
+      <li><a href ="#contact">Contact</a></li>
+    </ul>
+  </section>
+</nav>
+</header>
+ 
+<main>
   <section class="hero">
-    <div class="hero-text">
-      <h1>Akshera Paladhi</h1>
-      <h2>Electrical Engineer</h2>
-      <p>Passionate about space, astrophysics, and innovative engineering solutions.</p>
-    </div>
-    <div class="hero-image">
-      <img src="IMG_8360.png" alt="Akshera Paladhi">
+    <div class="hero-content">
+      <h1 class="name">
+        <span class ="greeting">Hey! I am Akshera Paladhi!</span>
+      </h1>
+      <p class="title"><span class="typing-text">Electrical Engineer</span></p>
     </div>
   </section>
 
-  <!-- Bottom Navigation -->
-  <nav class="bottom-nav">
-    <hr class="line">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="portfolio.html">Portfolio</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-    <hr class="line">
-  </nav>
+   <!--About Me-->
 
-  
-  
-  <!-- Resume Button Section -->
-<div class="resume-section">
-  <button class="resume-button" onclick="window.open('Paladhi Resume.pdf', '_blank')">
-    Read My Resume
-  </button>
-</div>
+  <section id="about" class ="about-section">
+    <div class ="container">
+      <div class ="about content">
+        <div class="profile photo">
+          
+        </div>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hey! I am Akshera Paladhi, a second-year Electrical Engineering student with a minor in Astrophysics at University of California, Santa Cruz!
+          </p><br>
+          <p>
+            My background is in embedded systems, hardware–software integration, and signal processing, with hands-on experience in C/C++, STM32, Arduino, Python, and low-level system design. 
+          </p><br>
+          <p>
+            I’m seeking an electrical engineering or aerospace-focused internship where I can apply hands-on design skills, contribute to real-world systems, and continue learning alongside industry engineers 🚀
+          </p>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+   <!--Education-->
+
+  <section id="education" class="education-section">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="list1">
+        <div class="item1">
+          <div class="marker1"></div>
+          <div class="content1"></div>
+          <h3>University of California Santa Cruz, Santa Cruz, CA</h3>
+          <span class="date">September 2024 – Expected Graduation June 2028</span><br>
+          <span class="major">Bachelor of Science in Electrical Engineering B.S., Minor in Astrophysics</span><br>
+          <span class="GPA">GPA: 3.73/4.0</span><br>
+          <br><span class="Coursework"><strong>Relevant Coursework:</strong></span>
+          <span class="classes">Computer Systems and Assembly Language, Modern Electronics, Introduction to Physics I, Computer Systems and C Programming, Linear Algebra, Vector Calculus, Python Programming, Introduction to Probability Theory, Physics III Introduction to Electricity and Magnetism, Introduction to Scientific Computing</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!--Projects-->
+  <section id="projects" class="project-section">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <article class ="project-row">
+        <div class="media">
+          <img src="" alt="">
+        </div>
+        <div class="info">
+          <h3>SSCS Arduino Contest - IEEE Project</h3>
+          <span class="date">April 2025 – August 2025</span><br>
+          <ul>
+          <li><p>Developed a wearable audio-to-haptic device using FFT and motor control to improve accessibility</p></li>
+          <li><p>Implemented real-time C signal processing with analog filtering and UART/I²C for reliable performance</p></li>
+          <li><p>Led hardware and software integration and testing to validate system accuracy</p></li>
+          <li><p>Designed motor driver and audio circuits, applying power and small-signal analysis collaboratively</p></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class ="project-row">
+        <div class="media">
+          <img src="" alt="">
+        </div>
+        <div class="info">
+          <h3>BattleBoats Project</h3>
+          <span class="date">May 2025 – June 2025</span><br>
+          <ul>
+          <li><p>Designed a Battleship-style multiplayer game on a 32-bit Microchip PIC32, implementing game logic in C to implement
+            logic and I/O contro</p></li>
+          <li><p>Debugged timing and memory issues, ensuring reliable performance and game synchronization</p></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class ="project-row">
+        <div class="media">
+          <img src="" alt="">
+        </div>
+        <div class="info">
+          <h3>AI Model</h3>
+          <span class="date">Jun 2023 - Sep 2023</span><br>
+          <ul>
+          <li><p>Collaborated w/a UIUC college student to design an AI model to detect phishing emails</p></li>
+          <li><p>Researched topics on neural networks & natural language processing</p></li>
+          <li><p>Expanded my skills on topics-Python, AI, & Cybersecurity</p></li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+   <!--Experience-->
+  <section id="experience" class="experience-section">
+    <div class ="container">
+      <h2>Experience</h2>
+      <div class="list">
+        <div class="item">
+          <div class="marker"></div>
+            <div class = "content">
+              <h3>Learning Support Services Large Group Tutor/Individual Tutor (Hybrid)</h3>
+              <span class="date">Sept 2025 – Present</span>
+              <ul>
+                <li>Leading weekly tutoring sessions for 5+ students in CSE 12 (Computer Systems & Assembly Language), reinforcing low- level logic, data structures, and system design to improve retention and applied understanding </li>
+                <li>Providing one-on-one tutoring in Linear Algebra to strengthen conceptual reasoning in vector spaces, eigenvalues, and matrix computation for the student</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="item">
+          <div class="marker"></div>
+            <div class = "content">
+              <h3>UC Santa Cruz Quantum Computing (Hybrid) Vice President</h3>
+              <span class="date">August 2025 – Present</span>
+              <ul>
+                <li>Organizing weekly technical workshops and events for 20+ student members, introducing practical applications of quantum algorithms </li>
+                <li>Collaborating with leadership to plan funding initiatives, expand research opportunities and oversee and ongoing machine learning research project comparing quantum neural networks (QNNs) vs. Deep Neural Networks (DNNs)</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="item">
+          <div class="marker"></div>
+            <div class = "content">
+              <h3>UC Santa Cruz Institute of Particle Physics (SCIPP) Undergraduate Researcher (Hybrid)</h3>
+              <span class="date">June 2025 – Present</span>
+              <ul>
+                <li>Developing embedded C/C++ firmware for STM32 with UART/I²C for real-time data acquisition</li>
+                <li>Debugging hardware and software systems using oscilloscopes, logic analyzers, and multimeters</li>
+                <li>Automating calibration and logging in Python, increasing hardware testing throughout</li>
+                <li>Contributing to a Git-managed codebase, following professional collaboration practices</li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="item">
+          <div class="marker"></div>
+            <div class = "content">
+              <h3>UC Santa Cruz Institute of Particle Physics (SCIPP) Undergraduate Researcher (Hybrid)</h3>
+              <span class="date">May 2025 – August 2025</span>
+              <ul>
+                <li>Served as Scientist on a student team in NASA’s Workforce Preparation Academy, developing science goals and traceability matrices, conducting trade studies, and creating CAD designs in Siemens NX</li>
+                <li>Reviewed NASA solicitation proposals, evaluating submissions against rubric criteria and providing structured feedback to proposal teams</li>
+              </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <!--SKILLS-->
+  <section id="skills" class="skills-section">
+    <div class ="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>C</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>C++</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>HTML</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>CSS</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>Python</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>Matlab</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>Jupyter Notebooks</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>Git</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>STM32 microcontrollers</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>UART/I²C/SPI</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>Thorlabs CC215MU camera (ThorImageCAM/ThorCam)</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>Data Structures & Algorithms</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>Circuit Analysis</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>RISC-V</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>KiCad</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>LTSpice</span>
+        </div>
+        <div class="skill-tag">
+          <div class="skill-icon"><img src="images/"></div>
+          <span>Soldering</span>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!--Footer-->
+    <footer id="contact" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <h3>Contact Info</h3>
+          <div class="contact-info">
+            <a href="mailto:akshera.paladhi28@gmail.com" class="link">
+                <span class="email-icon">✉</span>
+                        akshera.paladhi28@gmail.com
+              </a>
+              <a href="https://www.linkedin.com/in/akshera-paladhi/" class="link">
+                  LinkedIn
+                </a>
+                <a href="https://github.com/aksherap1" class="link">
+                    Github
+                  </a>
+                  <a href="https://gitlab.com/apaladhi" class="link">
+                    Gitlab
+                  </a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
 
-
-  
-
-  <script src="script.js"></script>
-</body>
-</html>
-
+</main>
