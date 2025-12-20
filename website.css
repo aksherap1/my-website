@@ -286,6 +286,21 @@ nav a:hover {
 /*phone specific*/
 @media (max-width: 768px) {
 
+  /* Prevent horizontal overflow */
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .name {
+    font-size: 2.2rem;
+  }
+
+  /* Reduce container padding */
+  .container1 {
+    padding: 0 1.5rem;
+  }
+
+
   .about-content {
     flex-direction: column;
     align-items: center;
@@ -312,6 +327,32 @@ nav a:hover {
 
   .about-text p {
     text-align: center;
+  }
+
+  /* Education section fixes */
+  .edu-header {
+    right: 0;
+    top: 30px;
+  }
+
+  .edu-header::before {
+    width: 90vw;
+    height: 50vw;
+    max-width: 420px;
+    max-height: 260px;
+  }
+
+  .edu-coursework {
+    left: 0;
+    padding: 1.5rem;
+    max-width: 100%;
+  }
+
+  .edu-coursework::before {
+    width: 90vw;
+    height: 45vw;
+    max-width: 420px;
+    max-height: 240px;
   }
 }
 
