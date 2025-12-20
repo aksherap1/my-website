@@ -286,6 +286,24 @@ nav a:hover {
 /*phone specific*/
 @media (max-width: 768px) {
 
+  /* Shrink header padding */
+  header {
+    padding: 1rem 1.5rem;
+  }
+
+  /* Wrap navbar items instead of overflowing */
+  nav ul {
+    flex-wrap: wrap;      /* allow items to stack */
+    justify-content: center;
+    gap: 1rem;            /* smaller spacing */
+    top: 0;
+  }
+
+  /* Shrink link font slightly */
+  nav a {
+    font-size: 0.85rem;
+  }
+
   /* Prevent horizontal overflow */
   html, body {
     overflow-x: hidden;
@@ -322,7 +340,7 @@ nav a:hover {
   .about-text h2 {
     left: 0;
     text-align: center;
-    font-size: 2.2rem;
+    font-size: 1.2rem;
   }
 
   .about-text p {
