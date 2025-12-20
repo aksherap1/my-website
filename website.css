@@ -303,6 +303,16 @@ nav a:hover {
 
 /*Projects*/
 
+.container2 {
+  width: 100%;
+  max-width: 1200px; /* limits max width on desktop */
+  margin: 0 auto;     /* center it */
+  padding: 0 1.5rem;  /* adds space on left/right for mobile */
+  box-sizing: border-box;
+  position: relative;
+  left: 100px;
+}
+
 .project-section {
   position: relative;
   padding: 5rem 0;
@@ -315,7 +325,125 @@ nav a:hover {
   color: purple;
   text-align: center;
   position: relative;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  right: 100px;
 }
+
+.project-row {
+  display:flex;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 0rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.media {
+  position: relative;
+  top: 30px;
+}
+
+/* Image container */
+.project-row .media {
+  flex: 0 0 40%; /* 40% of the row width */
+  max-width: 100%;      /* never exceed parent container */
+  box-sizing: border-box;
+}
+
+.project-row .media img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;      /* ensures image stays inside container */
+  border-radius: 8px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.media1 {
+  position: relative;
+  top: 10px;
+}
+
+/* Image container */
+.project-row .media1 {
+  flex: 0 0 40%; /* 40% of the row width */
+  max-width: 100%;      /* never exceed parent container */
+  box-sizing: border-box;
+}
+
+.project-row .media1 img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;      /* ensures image stays inside container */
+  border-radius: 8px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.media2 {
+  position: relative;
+  top: 10px;
+}
+
+/* Image container */
+.project-row .media2 {
+  flex: 0 0 40%; /* 40% of the row width */
+  max-width: 100%;      /* never exceed parent container */
+  box-sizing: border-box;
+}
+
+.project-row .media2 img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;      /* ensures image stays inside container */
+  border-radius: 8px;
+  object-fit: cover;
+  border: 4px solid white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Text/content container */
+
+.project-row .info {
+  flex: 1; /* takes remaining width */
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.project-row .info h3 {
+  font-size: 1.3rem;
+  color: black;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.project-row .info .date {
+  font-size: 0.85rem;
+  color: gray;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.project-row .info ul {
+  list-style: disc inside;
+  padding-left: 0;
+  position: relative;
+  bottom: 50px;
+}
+
+.project-row .info li {
+  margin-bottom: 0.8rem;
+}
+
+.project-row .info p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
 
 
 /*Experience*/
@@ -323,7 +451,7 @@ nav a:hover {
 .experience-section {
   position: relative;
   padding: 5rem 0;
-  bottom: 200px;
+  bottom: 300px;
 }
 
 .experience-section h2 {
@@ -442,6 +570,22 @@ nav a:hover {
     height: 45vw;
     max-width: 420px;
     max-height: 240px;
+  }
+
+  .project-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-row .media {
+    flex: 0 0 80%;
+    max-width: 300px;
+    margin-bottom: 1.5rem;
+  }
+
+  .project-row .info {
+    flex: 1;
   }
 }
 
