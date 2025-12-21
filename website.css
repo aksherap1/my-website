@@ -488,7 +488,7 @@ nav a:hover {
 
 .container3{
   position: relative;
-  bottom: 260px;
+  bottom: 200px;
 }
 
 .experience-section {
@@ -730,9 +730,62 @@ nav a:hover {
   padding: 0 1rem;
   bottom: 0; /* remove huge negative offsets */
   max-width: 100%;
+  position: relative;
+  bottom: 150px;
 }
 
 
+
+/*Scrolling*/
+/* Prevent horizontal scrolling on all devices */
+html, body {
+  overflow-x: hidden;
+}
+
+/* Ensure all containers stay within viewport */
+.container1,
+.container2,
+.container3,
+.container4,
+.about-text,
+.project-row,
+.edu-coursework,
+.hero-content {
+  max-width: 100%;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+/* Hero text scales */
+.hero-content .greeting,
+.hero-content .name,
+.hero-content .title {
+  font-size: clamp(1rem, 5vw, 2rem); /* responsive scaling */
+}
+
+/* Experience timeline items stack on small screens */
+@media (max-width: 768px) {
+  .experience-section .item {
+    width: 100%;
+    left: 0 !important;
+    text-align: center !important;
+    padding: 0.5rem 1rem;
+  }
+
+  .experience-section .marker {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+}
+
+/* Skills section responsive */
+.skills-section,
+.skills-section .skill-bar {
+  width: 100%;
+  max-width: 100%;
+}
 
 
 
