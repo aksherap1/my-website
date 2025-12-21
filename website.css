@@ -330,6 +330,8 @@ nav a:hover {
 }
 
 
+
+
 .project-section h2 {
   font-size: 3.0rem;
   margin-bottom: 4rem;
@@ -913,19 +915,13 @@ html, body {
     padding-right: 1rem;
   }
 
-  /* Marker positioned on line */
-  .experience-section .item .marker {
-    left: 20px;              /* same as line */
+  .experience-section .marker {
+    left: 12px !important;
     right: auto;
-    transform: translateX(0);
-    top: 0;
   }
 
-  /* Content box */
-  .experience-section .item .content {
-    margin: 0;               /* reset desktop offsets */
-    max-width: 90%;
-    text-align: left;
+  .experience-section .content {
+    margin-left: 0;
   }
 }
 
@@ -952,7 +948,7 @@ html, body {
 @media (max-width: 768px) {
 
   .project-section {
-    padding-top: 6rem;  /* adjust this as needed */
+    padding-top: 4rem;  /* adjust this as needed */
   }
 
   .project-section h2 {
