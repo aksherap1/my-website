@@ -1060,6 +1060,42 @@ html, body {
 
 }
 
+@media (max-width: 768px) {
+  /* Projects images tap effect */
+  .media:active,
+  .media1:active,
+  .media2:active {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(212, 0, 255, 0.962);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Education circles tap effect */
+  .edu-header:active::before,
+  .edu-coursework:active::before {
+    transform: translate(-50%, -50%) translateY(-5px);
+    box-shadow: 0 10px 25px rgba(212, 0, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Experience boxes tap effect */
+  .experience-section .content:active {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(212, 0, 255, 0.962);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: rgba(128, 0, 128, 0.185);
+  }
+
+  /* Footer icon tap effect */
+  .footer .contact-link img.footer-icon:active {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+}
+
+
+
 
 
 
