@@ -903,7 +903,7 @@ html, body {
 
 @media (max-width: 768px) {
   .experience-section .list::before {
-    left: 24px; /* aligns with marker center */
+    left: 30px; /* aligns with marker center */
     transform: none;
   }
 
@@ -911,14 +911,31 @@ html, body {
     width: 100%;
     left: 0 !important;
     text-align: left !important;
-    padding-left: 3rem;
+    padding-left: 3.5rem;
     padding-right: 1rem;
   }
 
   .experience-section .marker {
-    left: 0;           /* start at the left of the item */
-    transform: translateX(-50%); /* center on the vertical line */
+    position: absolute;
     top: 20px;
+    left: 30px;            /* same as line */
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: rgba(128,0,128,0.2);
+  }
+
+  .experience-section .marker::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;           /* inner circle size */
+    height: 8px;
+    background-color: rgba(128,0,128,0.8); /* inner dot */
+    border-radius: 50%;
   }
 
   .experience-section .content {
@@ -1035,7 +1052,7 @@ html, body {
 
   /* Text sizes (your existing rules) */
   .education-section h2 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
 
   .education-section h3 {
