@@ -742,17 +742,8 @@ nav a:hover {
 }
 
 
-.container3, .container4 {
-  padding: 0 1rem;
-  bottom: 0; /* remove huge negative offsets */
-  max-width: 100%;
-  position: relative;
-  bottom: 150px;
-}
-
-
-
 /*Scrolling*/
+
 /* Prevent horizontal scrolling on all devices */
 html, body {
   overflow-x: hidden;
@@ -773,20 +764,6 @@ html, body {
   padding-right: 1rem;
 }
 
-/* Experience timeline items stack on small screens */
-@media (max-width: 768px) {
-  .experience-section .item {
-    width: 100%;
-    left: 0 !important;
-    text-align: center !important;
-    padding: 0.5rem 1rem;
-  }
-
-  .experience-section .marker {
-    left: 50% !important;
-    transform: translateX(-50%);
-  }
-}
 
 /* Skills section responsive */
 .skills-section,
@@ -795,8 +772,17 @@ html, body {
   max-width: 100%;
 }
 
+.container3, .container4 {
+  padding: 0 1rem;
+  bottom: 0; /* remove huge negative offsets */
+  max-width: 100%;
+  position: relative;
+  bottom: 150px;
+}
+
 
 /*phone*/
+
 @media (max-width: 768px) {
   .project-row {
     flex-direction: column;
@@ -818,6 +804,17 @@ html, body {
   .project-row .info ul {
     bottom: 0;
     font-size: 0.85rem;
+  }
+
+  /* Reduce space BELOW the date */
+  .project-row .info .date {
+    display: block;
+    margin-bottom: 0.3rem; /* tighten gap */
+  }
+
+  /* Reduce space ABOVE the list */
+  .project-row .info ul {
+    margin-top: 0.3rem; /* tighten gap */
   }
 }
 
@@ -989,7 +986,7 @@ html, body {
 
   /* Move coursework circle down + right */
   .edu-coursework {
-    transform: translate(10px, 30px);
+    transform: translate(20px, 50px);
   }
 
   /* Keep circles responsive */
@@ -1022,9 +1019,32 @@ html, body {
     line-height: 1.4;
   }
 
-  .edu-header {
-    font-size: 0.7rem;
-    line-height: 1.4;
+  .edu-header h2 {
+    font-size: 1.6rem;
+  }
+
+  .edu-header h3 {
+    font-size: 0.75rem;
+  }
+
+  .edu-header .date {
+    font-size: 0.65rem;
+  }
+
+}
+
+/* Experience timeline items stack on small screens */
+@media (max-width: 768px) {
+  .experience-section .item {
+    width: 100%;
+    left: 0 !important;
+    text-align: center !important;
+    padding: 0.5rem 1rem;
+  }
+
+  .experience-section .marker {
+    left: 50% !important;
+    transform: translateX(-50%);
   }
 }
 
