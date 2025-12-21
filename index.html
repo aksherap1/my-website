@@ -275,30 +275,38 @@
         <div class="footer-content">
           <h3>Contact Info</h3>
     
-    
-          <!-- Social Links -->
+          <!-- Social / Contact Icons -->
           <div class="social-links">
+            <a href="#" class="contact-link" id="copy-email">
+              <img src="images/gmail.png" alt="Email Icon" class="footer-icon">
+            </a>            
             <a href="https://www.linkedin.com/in/akshera-paladhi/" class="contact-link">
-              <img src="images/linkedin.webp" alt="LinkedIn" class="footer-icon">
-              LinkedIn
+              <img src="images/linkedin.png" alt="LinkedIn" class="footer-icon">
             </a>
             <a href="https://github.com/aksherap1" class="contact-link">
               <img src="images/github.png" alt="GitHub" class="footer-icon">
-              GitHub
             </a>
             <a href="https://gitlab.com/apaladhi" class="contact-link">
               <img src="images/gitlab.png" alt="GitLab" class="footer-icon">
-              GitLab
             </a>
-            <a>
-            <img src="images/gmail.png" alt="Email Icon" class="footer-icon">
-            <span>akshera.paladhi28@gmail.com</span>
-          </a>
           </div>
         </div>
       </div>
     </footer>
     
-
-
+    
+    <script>
+      const copyEmail = document.getElementById("copy-email");
+      copyEmail.addEventListener("click", function(e) {
+        e.preventDefault();
+        navigator.clipboard.writeText("akshera.paladhi28@gmail.com")
+          .then(() => {
+            alert("Email copied to clipboard!");
+          })
+          .catch(err => {
+            console.error("Failed to copy email: ", err);
+          });
+      });
+    </script>
+  </body>
 </main>

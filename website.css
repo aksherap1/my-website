@@ -500,7 +500,7 @@ nav a:hover {
   top: 20px;
   width: 16px;
   height: 16px;
-  background-color: purple;
+  background-color: rgba(128, 0, 128, 0.199);
   border-radius: 50%;
   border: 3px solid white;
   z-index: 1;
@@ -514,6 +514,11 @@ nav a:hover {
   position: relative;
 }
 
+.content:hover {
+  background-color: rgba(128, 0, 128, 0.185);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(219, 216, 211, 0.3);
+}
 /* Right side items */
 .experience-section .item:nth-child(odd) {
   left: 50%;
@@ -624,55 +629,49 @@ nav a:hover {
 
 .footer h3 {
   font-size: 1.8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-family: 'Poppins', sans-serif;
+  color: white;
 }
 
-/* Email row */
-.footer .email-row {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.footer .email-row .footer-icon {
-  width: 24px;
-  height: 24px;
-}
-
-/* Social links */
+/* Social links container */
 .footer .social-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem; /* space between icons */
   flex-wrap: wrap;
-  margin-top: 0.5rem;
 }
 
-.footer .contact-link {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+/* Icons */
+.footer .contact-link img.footer-icon {
+  width: 40px;   /* consistent width */
+  height: 40px;  /* consistent height */
+  object-fit: contain; /* prevent squishing */
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.footer .contact-link:hover {
-  color: #6702ff;
+/* Hover effect */
+.footer .contact-link img.footer-icon:hover {
+  transform: scale(1.2);          /* slight zoom on hover */
+  filter: brightness(1.2);         /* brighten on hover */
 }
 
-.footer .social-links .footer-icon {
-  width: 24px;
-  height: 24px;
+/* Responsive: stack icons vertically on small screens */
+@media (max-width: 480px) {
+  .footer .social-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 }
 
-
-
+/* Make only GitHub icon bigger */
+.footer .contact-link[href*="github.com"] img.footer-icon {
+  width: 50px;   /* slightly bigger than others */
+  height: 50px;
+  position: relative;
+  bottom: 7px;
+}
 
 
 /* Mobile stacking */
