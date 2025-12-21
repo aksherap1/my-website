@@ -951,6 +951,31 @@ html, body {
   }
 }
 
+@media (max-width: 768px) {
+
+  /* Education headings */
+  .education-section h2 {
+    font-size: 2rem;
+  }
+
+  .education-section h3 {
+    font-size: 0.9rem;
+  }
+
+  /* Dates */
+  .education-section .date {
+    font-size: 0.75rem;
+  }
+
+  /* Coursework text */
+  .edu-coursework,
+  .Coursework {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+}
+
+
 
 
 
