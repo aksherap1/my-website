@@ -330,8 +330,6 @@ nav a:hover {
 }
 
 
-
-
 .project-section h2 {
   font-size: 3.0rem;
   margin-bottom: 4rem;
@@ -954,7 +952,7 @@ html, body {
 @media (max-width: 768px) {
 
   .project-section {
-    padding-top: 4rem;  /* adjust this as needed */
+    padding-top: 6rem;  /* adjust this as needed */
   }
 
   .project-section h2 {
