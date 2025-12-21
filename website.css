@@ -831,6 +831,12 @@ html, body {
     bottom: 0;
     font-size: 0.85rem;
   }
+  .project-section h2 {
+    margin-top: 3rem;  /* pushes the title down on mobile */
+    margin-bottom: 2rem; /* optional: keep spacing below */
+    font-size: 2.2rem; /* optional: adjust size for mobile */
+    text-align: center; /* ensure it’s centered */
+  }
 }
 
 @media (max-width: 768px) {
