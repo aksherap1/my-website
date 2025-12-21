@@ -561,6 +561,18 @@ nav a:hover {
   z-index: 1;
 }
 
+.experience-section .marker::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;           /* inner circle size */
+  height: 8px;
+  background-color: rgba(128,0,128,0.8); /* darker inner circle */
+  border-radius: 50%;
+}
+
 /* Boxes for experience content */
 .experience-section .content {
   background-color: rgba(255,255,255,0.1); /* transparent box */
