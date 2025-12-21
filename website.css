@@ -234,6 +234,12 @@ nav a:hover {
   right: 170px;
 }
 
+.edu-header:hover::before {
+  transform: translate(-50%, -50%) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(212, 0, 255, 0.5);
+  /* DO NOT change background-color here */
+}
+
 .edu-header::before {
   content: "";
   position: absolute;
@@ -290,6 +296,12 @@ nav a:hover {
   transform: translate(-50%, -50%);
   z-index: -1;
   border: 6px solid white;
+}
+
+.edu-coursework:hover::before {
+  transform: translate(-50%, -50%) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(212, 0, 255, 0.5);
+  /* DO NOT change background-color here */
 }
 
 .Coursework {
@@ -359,6 +371,21 @@ nav a:hover {
   object-fit: cover;
   border: 4px solid white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.media:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(212, 0, 255, 0.962);
+}
+
+.media1:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(212, 0, 255, 0.962);
+}
+
+.media2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(212, 0, 255, 0.962);
 }
 
 .media1 {
@@ -444,6 +471,18 @@ nav a:hover {
   line-height: 1.4;
 }
 
+/* Style links in your project section */
+.project-row a {
+  color: purple;         /* change to whatever color you want */
+  text-decoration: underline; /* optional: can remove underline if you want */
+  transition: color 0.3s ease;
+}
+
+.project-row a:hover {
+  color: #6702ff;       /* hover color */
+  text-decoration: underline; /* optional */
+}
+
 
 /* Experience Section */
 
@@ -517,7 +556,7 @@ nav a:hover {
 .content:hover {
   background-color: rgba(128, 0, 128, 0.185);
     transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(219, 216, 211, 0.3);
+    box-shadow: 0 10px 25px rgba(212, 0, 255, 0.962);
 }
 /* Right side items */
 .experience-section .item:nth-child(odd) {
