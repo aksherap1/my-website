@@ -902,26 +902,35 @@ html, body {
 }
 
 @media (max-width: 768px) {
+
+  /* Center vertical line */
   .experience-section .list::before {
-    left: 20px;
-    transform: none;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
+  /* Timeline items full width */
   .experience-section .item {
     width: 100%;
     left: 0 !important;
-    text-align: left !important;
-    padding-left: 3rem;
-    padding-right: 1rem;
+    text-align: center;       /* stack content in middle */
+    padding: 0;               /* remove desktop padding */
+    margin-bottom: 3rem;      /* space between items */
   }
 
-  .experience-section .marker {
-    left: 12px !important;
+  /* Marker in center of line */
+  .experience-section .item .marker {
+    left: 50% !important;
     right: auto;
+    transform: translateX(-50%);
+    top: 0;
   }
 
-  .experience-section .content {
-    margin-left: 0;
+  /* Content box below marker */
+  .experience-section .item .content {
+    margin: 1rem auto 0 auto; /* center below marker */
+    text-align: center;
+    max-width: 90%;
   }
 }
 
