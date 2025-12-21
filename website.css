@@ -67,7 +67,7 @@ nav a:hover {
   width: 100%;
   height: 100vh;
   display: flex;
-  background-image: url('images/space.png');
+  background-image: url('images/');
   background-size: cover;               /* cover entire area */
   background-position: center;          /* center the image */
   background-repeat: no-repeat;         /* prevent tiling */
@@ -902,35 +902,32 @@ html, body {
 }
 
 @media (max-width: 768px) {
-
-  /* Center vertical line */
   .experience-section .list::before {
-    left: 50%;
-    transform: translateX(-50%);
+    left: 20px;
+    transform: none;
   }
 
-  /* Timeline items full width */
   .experience-section .item {
     width: 100%;
     left: 0 !important;
-    text-align: center;       /* stack content in middle */
-    padding: 0;               /* remove desktop padding */
-    margin-bottom: 3rem;      /* space between items */
+    text-align: left !important;
+    padding-left: 3rem;
+    padding-right: 1rem;
   }
 
-  /* Marker in center of line */
+  /* Marker positioned on line */
   .experience-section .item .marker {
-    left: 50% !important;
+    left: 20px;              /* same as line */
     right: auto;
-    transform: translateX(-50%);
+    transform: translateX(0);
     top: 0;
   }
 
-  /* Content box below marker */
+  /* Content box */
   .experience-section .item .content {
-    margin: 1rem auto 0 auto; /* center below marker */
-    text-align: center;
+    margin: 0;               /* reset desktop offsets */
     max-width: 90%;
+    text-align: left;
   }
 }
 
