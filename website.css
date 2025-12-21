@@ -757,14 +757,6 @@ html, body {
   padding-right: 1rem;
 }
 
-
-/* Hero text scales */
-.hero-content .greeting,
-.hero-content .name,
-.hero-content .title {
-  font-size: clamp(1rem, 5vw, 2rem); /* responsive scaling */
-}
-
 /* Experience timeline items stack on small screens */
 @media (max-width: 768px) {
   .experience-section .item {
