@@ -933,27 +933,77 @@ html, body {
 }
 
 @media (max-width: 768px) {
+
+  /* Stack projects cleanly */
   .project-row {
     flex-direction: column;
     align-items: center;
+    gap: 2.5rem;              /* SPACE between image + text */
+    margin: 3rem 0;           /* SPACE between projects */
+    padding-bottom: 0;
   }
 
+  /* Reset ALL media containers */
   .project-row .media,
   .project-row .media1,
   .project-row .media2 {
     max-width: 100%;
     flex: 0 0 100%;
+    position: static;         /* kills desktop offsets */
+    top: 0;
+    margin: 0;
   }
 
+  /* Reset info card */
   .project-row .info {
-    padding-left: 0;
+    width: 100%;
+    padding: 1rem 1.5rem;
     text-align: center;
+    position: static;         /* kills overlap */
+    margin: 0;
   }
+
+  /* Fix overlapping titles */
+  .project-row .info h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  /* Lists spacing */
+  .project-row .info ul {
+    position: static;
+    margin-top: 1rem;
+    font-size: 0.85rem;
+  }
+
 }
+
 
 @media (max-width: 768px) {
 
-  /* Education headings */
+  /* Move header circle up + left */
+  .edu-header {
+    transform: translate(-10px, -30px);
+  }
+
+  /* Move coursework circle down + right */
+  .edu-coursework {
+    transform: translate(10px, 30px);
+  }
+
+  /* Keep circles responsive */
+  .edu-header::before {
+    width: 90%;
+    height: 260px;
+  }
+
+  .edu-coursework::before {
+    width: 90%;
+    height: 220px;
+  }
+
+  /* Text sizes (your existing rules) */
   .education-section h2 {
     font-size: 2rem;
   }
@@ -962,14 +1012,17 @@ html, body {
     font-size: 0.9rem;
   }
 
-  /* Dates */
   .education-section .date {
     font-size: 0.75rem;
   }
 
-  /* Coursework text */
   .edu-coursework,
   .Coursework {
+    font-size: 0.7rem;
+    line-height: 1.4;
+  }
+
+  .edu-header {
     font-size: 0.7rem;
     line-height: 1.4;
   }
