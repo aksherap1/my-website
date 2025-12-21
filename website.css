@@ -321,8 +321,6 @@ nav a:hover {
   margin: 0 auto;     /* center it */
   padding: 0 1.5rem;  /* adds space on left/right for mobile */
   box-sizing: border-box;
-  position: relative;
-  left: 100px;
 }
 
 .project-section {
@@ -331,6 +329,9 @@ nav a:hover {
   bottom: 150px;
 }
 
+
+
+
 .project-section h2 {
   font-size: 3.0rem;
   margin-bottom: 4rem;
@@ -338,17 +339,15 @@ nav a:hover {
   text-align: center;
   position: relative;
   font-family: 'Poppins', sans-serif;
-  position: relative;
-  right: 100px;
+  right: 0;
 }
 
 .project-row {
-  display:flex;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-bottom: 0rem;
+  display: flex;
   flex-wrap: wrap;
-  position: relative;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
 }
 
 .media {
@@ -435,9 +434,16 @@ nav a:hover {
 /* Text/content container */
 
 .project-row .info {
-  flex: 1; /* takes remaining width */
+  flex: 1 1 300px;     /* allows shrinking */
+  min-width: 0;        /* CRITICAL: prevents text overflow */
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
   font-family: 'Poppins', sans-serif;
+  position: static;
+  padding-left: 2rem;
 }
+
 
 
 .project-row .info h3 {
@@ -459,16 +465,11 @@ nav a:hover {
   padding-left: 0;
   position: relative;
   bottom: 50px;
+  font-size: 0.70rem;
 }
 
 .project-row .info li {
   margin-bottom: 0.8rem;
-}
-
-.project-row .info p {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.4;
 }
 
 /* Style links in your project section */
@@ -482,6 +483,21 @@ nav a:hover {
   color: #6702ff;       /* hover color */
   text-decoration: underline; /* optional */
 }
+
+
+.project-row .media,
+.project-row .media1,
+.project-row .media2 {
+  flex: 0 1 40%;
+  max-width: 40%;
+}
+
+.project-row img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
 
 
 /* Experience Section */
@@ -780,6 +796,30 @@ html, body {
 }
 
 
+/*phone*/
+@media (max-width: 768px) {
+  .project-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-row .media,
+  .project-row .media1,
+  .project-row .media2 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .project-row .info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .project-row .info ul {
+    bottom: 0;
+    font-size: 0.85rem;
+  }
+}
 
 
 
