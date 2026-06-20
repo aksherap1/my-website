@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>work | akshera paladhi</title>
+  <link rel="stylesheet" href="website.css">
+</head>
+<body>
+
+  <div class="portfolio-container">
+    <!-- Left Column Navigation -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">intro</a></li>
+          <li><a href="experience.html" class="active">work</a></li>
+          <li><a href="Paladhi Resume.pdf" download="Akshera Paladhi Resume">resume</a></li>
+        </ul>
+      </nav>
+    </header>
+   
+    <!-- Right Column Content -->
+    <main>
+      <div class="intro-header">
+        i've worked on
+      </div>
+
+      <div class="experience-list">
+        <h3>uc santa cruz institute of particle physics (scipp) — undergraduate researcher</h3>
+        <span class="date">june 2025 – present</span>
+        <ul>
+          <li>developing embedded c/c++ firmware for stm32 platforms with uart/i²c pipelines to handle real-time sensor data acquisition.</li>
+          <li>debugging integrated hardware and software components utilizing oscilloscopes, logic analyzers, and multi-meters.</li>
+          <li>automating routine validation calibration profiles and testing logging data via custom python scripting.</li>
+        </ul>
+
+        <h3>learning support services — computer systems & engineering tutor</h3>
+        <span class="date">sept 2025 – present</span>
+        <ul>
+          <li>leading group tutoring blocks focusing on low-level microprocessor architecture, data framing, assembly translation rules, and structural logic.</li>
+          <li>mentoring individual students in linear algebra concepts, emphasizing vector transformations, matrices, and eigenspaces.</li>
+        </ul>
+
+        <h3>uc santa cruz quantum computing club — vice president</h3>
+        <span class="date">august 2025 – present</span>
+        <ul>
+          <li>structuring algorithmic workshop material for student cohorts exploring the practical logic of basic quantum gates and operations.</li>
+          <li>coordinating cross-collaborative timelines evaluating foundational neural network modeling parameters.</li>
+        </ul>
+
+        <h3>l’space nasa academy — research participant</h3>
+        <span class="date">may 2025 – august 2025</span>
+        <ul>
+          <li>collaborated within team flight-proposal constraints formulating objective mission criteria metrics, component trade analyses, and cad design templates within siemens nx.</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <!-- Shared Minimal Footer -->
+  <footer>
+    <div class="footer-left">
+      <a href="#" id="copy-email">email</a>
+      <a href="https://github.com/aksherap1" target="_blank">github</a>
+      <a href="https://www.linkedin.com/in/akshera-paladhi/" target="_blank">linkedin</a>
+      <a href="https://gitlab.com/apaladhi" target="_blank">gitlab</a>
+    </div>
+    <div class="footer-right">
+      <span>santa cruz, ca</span> &nbsp;·&nbsp; <span>© 2026 akshera paladhi</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("copy-email").addEventListener("click", function(e) {
+      e.preventDefault();
+      navigator.clipboard.writeText("akshera.paladhi28@gmail.com")
+        .then(() => alert("Email copied to clipboard!"))
+        .catch(err => console.error("Failed to copy email: ", err));
+    });
+  </script>
+</body>
+</html>
