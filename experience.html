@@ -5,6 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Akshera Paladhi</title>
   <link rel="stylesheet" href="website.css">
+  <style>
+    /* Keeps titles looking clean while remaining clickable */
+    .project-link {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .project-link:hover {
+      color: #5b3da1;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
 
@@ -34,25 +46,25 @@
 
       <div class="experience-list">
         <div class="content-block">
-          <h3>Air Mouse (ESP32 + MPU-6050)</h3>
+          <h3><a href="https://github.com/aksherap1/Air-Mouse-Project" target="_blank" class="project-link">Air Mouse (ESP32 + MPU-6050)</a></h3>
           <span class="date">Dec 2025 – Present</span>
           <p>I am building a motion-controlled wireless mouse by interfacing an ESP32 with an MPU-6050 IMU over Bluetooth HID. I wrote the embedded firmware in C++ using the Arduino IDE to implement custom sensor filtering and calibration logic for precise cursor control. Right now, I'm taking my breadboard prototype and routing a compact, multi-layer custom PCB in KiCad—focusing on hardware bring-up, proper trace routing for signal integrity, and surface-mount device (SMD) integration troubleshooting.</p>
         </div>
 
         <div class="content-block">
-          <h3>Music Visualizer — Wearable Audio-to-Haptic Device</h3>
+          <h3><a href="https://github.com/IndiraMariya/ArduinoContest" target="_blank" class="project-link">Music Visualizer — Wearable Audio-to-Haptic Device</a></h3>
           <span class="date">Apr 2025 – Aug 2025</span>
           <p>I built an assistive wearable device that transforms real-time audio frequencies into localized haptic vibration feedback. The system uses an Arduino 8-bit microcontroller to process incoming small-signal audio data. To keep up with real-time hardware constraints, I heavily optimized memory using Fixed FFT-8 algorithms with in-place computations, mapping frequency bins across a customized motor-driver circuit grid.</p>
         </div>
 
         <div class="content-block">
-          <h3>BattleBoats Project</h3>
+          <h3><a href="https://github.com/aksherap1/BattleBoats" target="_blank" class="project-link">BattleBoats Project</a></h3>
           <span class="date">May 2025 – Jun 2025</span>
           <p>I developed a hardware-linked, multiplayer Battleship game on a 32-bit PIC32 MCU running MIPS architecture. The core logic uses embedded C and structural UART communication protocols for real-time board-to-board data exchange. I designed a rigid finite state machine (FSM) to cleanly separate the control plane (handshakes and turn syncing) from the live gameplay data plane, and implemented a secure, hashed key-based cryptographic negotiation protocol to prevent packet tampering or turn order manipulation.</p>
         </div>
 
         <div class="content-block">
-          <h3>Phishing Detection AI Model</h3>
+          <h3><a href="https://github.com/aksherap1/AI-Model" target="_blank" class="project-link">Phishing Detection AI Model</a></h3>
           <span class="date">Jun 2023 – Sep 2023</span>
           <p>I collaborated with a UIUC student to research and deploy a Python-based machine learning model tailored to scan and flag suspicious email metadata. We explored natural language processing (NLP) tokenization and neural network modeling structures to evaluate message intent, expanding my background into secure data pipelines and algorithmic optimization.</p>
         </div>
