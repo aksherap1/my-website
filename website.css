@@ -24,6 +24,7 @@ body {
   grid-template-columns: 100px 1fr;
   gap: 40px;
   align-items: flex-start;
+  width: 100%;
 }
 
 /* Sidebar Navigation Area */
@@ -34,7 +35,7 @@ header {
 nav ul {
   list-style: none;
   text-align: right;
-  position: fixed; /* Keeps it strictly stuck to the browser page viewport */
+  position: fixed; 
   width: 100px;
 }
 
@@ -49,12 +50,10 @@ nav ul li a {
   transition: color 0.2s ease;
 }
 
-/* Purple Theme Accents on Hover */
 nav ul li a:hover {
   color: #5b3da1; 
 }
 
-/* Highlight Selected/Current Page */
 nav ul li a.active {
   color: #111;
   font-weight: bold;
@@ -63,8 +62,8 @@ nav ul li a.active {
 /* Main Text Content Area */
 main {
   grid-column: 2;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  display: block; /* Changes from flex to block to force natural downward element stacking */
 }
 
 .intro-header {
@@ -101,20 +100,21 @@ main {
   margin-bottom: 8px;
 }
 
-/* Integrated Dashed Footer (Locked to the Content Flow) */
+/* Integrated Dashed Footer */
 footer {
   margin-top: 60px;
   padding-top: 20px;
-  border-top: 1px dashed #ddd; /* The layout line from your reference snapshot */
-  display: flex;
+  border-top: 1px dashed #ddd; 
+  display: flex !important; /* Force layout display rendering overrides */
   justify-content: space-between;
   font-size: 13px;
   color: #666;
   width: 100%;
+  clear: both;
 }
 
 footer a {
-  color: #5b3da1; /* Theme Purple Links */
+  color: #5b3da1; 
   text-decoration: underline;
   margin-right: 15px;
 }
