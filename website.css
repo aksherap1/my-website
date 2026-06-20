@@ -7,33 +7,30 @@
   padding: 0;
 }
 
-/* Lock the root window body from scrolling */
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #111;
   background-color: #fff;
   line-height: 1.6;
   font-size: 15px;
-  height: 100vh;
-  overflow: hidden; /* Prevents the window itself from ever moving */
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative; /* Established reference point for everything else */
 }
 
-/* Split Layout Container */
+/* Two-Column Layout Container */
 .portfolio-container {
   display: flex;
-  max-width: 900px;
-  width: 100%;
-  height: 100vh;
-  margin: 0 auto;
-  padding: 60px 40px;
   gap: 40px;
 }
 
-/* Sidebar Navigation - Physically cannot move */
+/* Sidebar Navigation - Truly Fixed Relative to Layout */
 header {
   width: 100px;
   flex-shrink: 0;
-  padding-top: 5px; /* Tiny adjustment to align top baseline with your title */
+  position: fixed;   /* Keeps it locked in mid-air on scroll */
+  height: auto;
 }
 
 nav ul {
@@ -52,6 +49,7 @@ nav ul li a {
   transition: color 0.2s ease;
 }
 
+/* Purple Theme Accents */
 nav ul li a:hover {
   color: #5b3da1; 
 }
@@ -61,26 +59,19 @@ nav ul li a.active {
   font-weight: bold;
 }
 
-/* Main Content Area - This handles 100% of the scrolling */
+/* Main Content Area - Pushed right so it sits alongside the fixed menu */
 main {
   flex-grow: 1;
-  overflow-y: auto; /* Adds a clean, natural scrollbar right inside this column */
-  height: 100%;
-  padding-right: 20px; /* Keeps your text from hitting the scrollbar edge */
-}
-
-/* Hide scrollbars for a cleaner look if desired, or let them render naturally */
-main::-webkit-scrollbar {
-  width: 4px;
-}
-main::-webkit-scrollbar-thumb {
-  background: #eee;
-  border-radius: 4px;
+  margin-left: 140px; /* Essential! Prevents text from slipping behind the fixed menu */
 }
 
 .intro-header {
   font-size: 16px;
   margin-bottom: 30px;
+}
+
+.content-block {
+  margin-bottom: 25px;
 }
 
 .content-block p {
@@ -111,20 +102,20 @@ main::-webkit-scrollbar-thumb {
   margin-bottom: 8px;
 }
 
-/* Footer Styles nestled inside the layout */
+/* Footer - Pushed right to align neatly with your scrolling column */
 footer {
   margin-top: 60px;
+  margin-left: 140px; /* Aligns footer seamlessly with the text block above it */
   padding-top: 20px;
   border-top: 1px dashed #ddd;
   display: flex;
   justify-content: space-between;
   font-size: 13px;
   color: #666;
-  padding-bottom: 40px; /* Extra padding so text doesn't hit bottom edge */
 }
 
 footer a {
-  color: #5b3da1;
+  color: #5b3da1; /* Deep Purple Links */
   text-decoration: underline;
   margin-right: 15px;
 }
