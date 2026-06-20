@@ -18,25 +18,26 @@ body {
   margin: 0 auto;
 }
 
-/* Two-Column Layout Container */
+/* Clear Grid Layout Setup */
 .portfolio-container {
   display: grid;
   grid-template-columns: 100px 1fr;
   gap: 40px;
-  align-items: flex-start;
   width: 100%;
 }
 
-/* Sidebar Navigation Area */
+/* Left Sidebar - Stays frozen cleanly on scroll */
 header {
   grid-column: 1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 60px; /* Keeps menu static when right side scrolls down */
+  height: max-content;
 }
 
 nav ul {
   list-style: none;
   text-align: right;
-  position: fixed; 
-  width: 100px;
 }
 
 nav ul li {
@@ -59,11 +60,10 @@ nav ul li a.active {
   font-weight: bold;
 }
 
-/* Main Text Content Area */
+/* Right Content Area - Dictates the true height of the page */
 main {
   grid-column: 2;
   width: 100%;
-  display: block; /* Changes from flex to block to force natural downward element stacking */
 }
 
 .intro-header {
@@ -102,19 +102,18 @@ main {
 
 /* Integrated Dashed Footer */
 footer {
-  margin-top: 60px;
+  margin-top: 80px;
   padding-top: 20px;
-  border-top: 1px dashed #ddd; 
-  display: flex !important; /* Force layout display rendering overrides */
+  border-top: 1px dashed #ddd; /* Match screenshot design layout */
+  display: flex;
   justify-content: space-between;
   font-size: 13px;
   color: #666;
   width: 100%;
-  clear: both;
 }
 
 footer a {
-  color: #5b3da1; 
+  color: #5b3da1; /* Deep purple color tint */
   text-decoration: underline;
   margin-right: 15px;
 }
