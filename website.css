@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* Reset & Base Styles */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +8,7 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color: #111;
   background-color: #fff;
   line-height: 1.6;
@@ -20,18 +22,20 @@ body {
 .portfolio-container {
   display: flex;
   gap: 40px;
+  align-items: flex-start; /* Prevents stretching */
 }
 
-/* Sidebar Navigation */
+/* Sidebar Navigation - Fixed & Non-Scrolling */
 header {
   width: 100px;
   flex-shrink: 0;
+  position: sticky;
+  top: 60px; /* Aligns with the body padding when scrolling */
+  height: fit-content;
 }
 
 nav ul {
   list-style: none;
-  position: sticky;
-  top: 60px;
   text-align: right;
 }
 
@@ -46,8 +50,9 @@ nav ul li a {
   transition: color 0.2s ease;
 }
 
+/* Purple Highlights on Navigation Hover */
 nav ul li a:hover {
-  color: #5b3da1;
+  color: #5b3da1; 
 }
 
 /* Active Page State */
@@ -56,7 +61,7 @@ nav ul li a.active {
   font-weight: bold;
 }
 
-/* Main Content Area */
+/* Main Content Area (This wraps your scrolling text) */
 main {
   flex-grow: 1;
 }
@@ -98,7 +103,7 @@ main {
   margin-bottom: 8px;
 }
 
-/* Footer Styles */
+/* Footer Styles with Purple Theme */
 footer {
   margin-top: 60px;
   padding-top: 20px;
@@ -110,13 +115,13 @@ footer {
 }
 
 footer a {
-  color: #5b3da1;
+  color: #5b3da1;             /* Deep purple links */
   text-decoration: underline;
   margin-right: 15px;
 }
 
 footer a:hover {
-  color: #5b3da1;
+  color: #3b1e73;             /* Darker purple hover state */
 }
 
 .footer-right {
