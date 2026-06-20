@@ -16,6 +16,36 @@
       color: #5b3da1;
       text-decoration: underline;
     }
+
+    /* Top Links Block (Highly Accessible) */
+    .top-links-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      border-bottom: 1px dashed #ddd;
+      font-size: 14px;
+    }
+
+    .top-links-left {
+      display: flex;
+      gap: 15px;
+    }
+
+    .top-links-left a {
+      color: #5b3da1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .top-links-left a:hover {
+      text-decoration: underline;
+    }
+
+    .top-links-right {
+      color: #666;
+    }
   </style>
 </head>
 <body>
@@ -25,8 +55,8 @@
     <header>
       <nav>
         <ul>
-          <li><a href="index.html" class="active">About Me</a></li>
-          <li><a href="experience.html">Experience</a></li>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="experience.html" class="active">Experience</a></li>
           <li><a href="resume.html">Resume</a></li>
         </ul>
       </nav>
@@ -36,6 +66,19 @@
     <main>
       <div class="intro-header">
         I've built
+      </div>
+
+      <!-- Relocated Top Links Bar -->
+      <div class="top-links-bar">
+        <div class="top-links-left">
+          <a href="#" id="copy-email">Email</a>
+          <a href="https://github.com/aksherap1" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/akshera-paladhi/" target="_blank">Linkedin</a>
+          <a href="https://gitlab.com/apaladhi" target="_blank">Gitlab</a>
+        </div>
+        <div class="top-links-right">
+          <span>Bay Area, CA</span> &nbsp;·&nbsp; <span>© 2026 Akshera Paladhi</span>
+        </div>
       </div>
 
       <div class="content-block">
@@ -68,21 +111,7 @@
           <span class="date">Jun 2023 – Sep 2023</span>
           <p>I collaborated with a UIUC student to research and deploy a Python-based machine learning model tailored to scan and flag suspicious email metadata. We explored natural language processing (NLP) tokenization and neural network modeling structures to evaluate message intent, expanding my background into secure data pipelines and algorithmic optimization.</p>
         </div>
-
       </div>
-
-      <!-- Integrated Dashed Footer -->
-      <footer>
-        <div class="footer-left">
-          <a href="#" id="copy-email">Email</a>
-          <a href="https://github.com/aksherap1" target="_blank">Github</a>
-          <a href="https://www.linkedin.com/in/akshera-paladhi/" target="_blank">Linkedin</a>
-          <a href="https://gitlab.com/apaladhi" target="_blank">Gitlab</a>
-        </div>
-        <div class="footer-right">
-          <span>Bay Area, CA</span> &nbsp;·&nbsp; <span>© 2026 Akshera Paladhi</span>
-        </div>
-      </footer>
     </main>
   </div>
 
