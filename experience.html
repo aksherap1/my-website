@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Experience | Akshera Paladhi</title>
+  <title>Projects | Akshera Paladhi</title>
   <link rel="stylesheet" href="website.css">
 </head>
 <body>
@@ -23,43 +23,40 @@
     <!-- Right Column Main Text Content Block -->
     <main>
       <div class="intro-header">
-        I've worked on
+        I've built
+      </div>
+
+      <div class="content-block">
+        <p>Over the last few terms, I've been diving deep into digital design and hardware architectures. I've learned a ton about Verilog, hardware description, and how signals and systems actually function in the real world. Seeing how mathematical tools like the Fast Fourier Transform (FFT) translate from textbook concepts into real-time embedded logic has been amazing, and it completely changed how I think about building and debugging complex circuits.</p>
+        
+        <p>I also learned how to build a video game completely out of digital logic circuitry. It was incredibly cool because it forced me to understand how 0s and 1s are tracked in real time, and it really showed me why D flip-flops are so important for saving data states and keeping the entire system perfectly synchronized on a clock edge.</p>
       </div>
 
       <div class="experience-list">
-        <h3>citris initiative for drone education and research (cider) — summer pilot trainee</h3>
-        <span class="date">june 2026 – present</span>
-        <ul>
-          <li>stay tuned! excited to learn about aerial stuff and drones!</li>
-        </ul>
+        <div class="content-block">
+          <h3>Air Mouse (ESP32 + MPU-6050)</h3>
+          <span class="date">Dec 2025 – Present</span>
+          <p>I am building a motion-controlled wireless mouse by interfacing an ESP32 with an MPU-6050 IMU over Bluetooth HID. I wrote the embedded firmware in C++ using the Arduino IDE to implement custom sensor filtering and calibration logic for precise cursor control. Right now, I'm taking my breadboard prototype and routing a compact, multi-layer custom PCB in KiCad—focusing on hardware bring-up, proper trace routing for signal integrity, and surface-mount device (SMD) integration troubleshooting.</p>
+        </div>
 
-        <h3>uc santa cruz institute of particle physics (scipp) — undergraduate researcher</h3>
-        <span class="date">june 2025 – present</span>
-        <ul>
-          <li>developing embedded c/c++ firmware for stm32 platforms with uart/i²c pipelines to handle real-time sensor data acquisition.</li>
-          <li>debugging integrated hardware and software components utilizing oscilloscopes, logic analyzers, and multi-meters.</li>
-          <li>automating routine validation calibration profiles and testing logging data via custom python scripting.</li>
-        </ul>
+        <div class="content-block">
+          <h3>Music Visualizer — Wearable Audio-to-Haptic Device</h3>
+          <span class="date">Apr 2025 – Aug 2025</span>
+          <p>I built an assistive wearable device that transforms real-time audio frequencies into localized haptic vibration feedback. The system uses an Arduino 8-bit microcontroller to process incoming small-signal audio data. To keep up with real-time hardware constraints, I heavily optimized memory using Fixed FFT-8 algorithms with in-place computations, mapping frequency bins across a customized motor-driver circuit grid.</p>
+        </div>
 
-        <h3>learning support services — computer systems & engineering tutor</h3>
-        <span class="date">sept 2025 – present</span>
-        <ul>
-          <li>leading group tutoring blocks focusing on low-level microprocessor architecture, data framing, assembly translation rules, and structural logic.</li>
-          <li>mentoring individual students in linear algebra concepts, emphasizing vector transformations, matrices, and eigenspaces.</li>
-        </ul>
+        <div class="content-block">
+          <h3>BattleBoats Project</h3>
+          <span class="date">May 2025 – Jun 2025</span>
+          <p>I developed a hardware-linked, multiplayer Battleship game on a 32-bit PIC32 MCU running MIPS architecture. The core logic uses embedded C and structural UART communication protocols for real-time board-to-board data exchange. I designed a rigid finite state machine (FSM) to cleanly separate the control plane (handshakes and turn syncing) from the live gameplay data plane, and implemented a secure, hashed key-based cryptographic negotiation protocol to prevent packet tampering or turn order manipulation.</p>
+        </div>
 
-        <h3>uc santa cruz quantum computing club — vice president</h3>
-        <span class="date">august 2025 – present</span>
-        <ul>
-          <li>structuring algorithmic workshop material for student cohorts exploring the practical logic of basic quantum gates and operations.</li>
-          <li>coordinating cross-collaborative timelines evaluating foundational neural network modeling parameters.</li>
-        </ul>
+        <div class="content-block">
+          <h3>Phishing Detection AI Model</h3>
+          <span class="date">Jun 2023 – Sep 2023</span>
+          <p>I collaborated with a UIUC student to research and deploy a Python-based machine learning model tailored to scan and flag suspicious email metadata. We explored natural language processing (NLP) tokenization and neural network modeling structures to evaluate message intent, expanding my background into secure data pipelines and algorithmic optimization.</p>
+        </div>
 
-        <h3>l’space nasa academy — research participant</h3>
-        <span class="date">may 2025 – august 2025</span>
-        <ul>
-          <li>collaborated within team flight-proposal constraints formulating objective mission criteria metrics, component trade analyses, and cad design templates within siemens nx.</li>
-        </ul>
       </div>
 
       <!-- Integrated Dashed Footer -->
@@ -71,7 +68,7 @@
           <a href="https://gitlab.com/apaladhi" target="_blank">Gitlab</a>
         </div>
         <div class="footer-right">
-          <span>santa cruz, ca</span> &nbsp;·&nbsp; <span>© 2026 akshera paladhi</span>
+          <span>Bay Area, CA</span> &nbsp;·&nbsp; <span>© 2026 Akshera Paladhi</span>
         </div>
       </footer>
     </main>
