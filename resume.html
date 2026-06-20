@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume | Akshera Paladhi</title>
+  <link rel="stylesheet" href="website.css">
+  <style>
+    /* Styling for the interactive resume preview and download action */
+    .resume-actions {
+      margin-bottom: 25px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .download-btn {
+      display: inline-block;
+      background-color: #5b3da1;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: 500;
+      transition: background-color 0.2s ease;
+    }
+
+    .download-btn:hover {
+      background-color: #3b1e73;
+    }
+
+    .view-native-link {
+      font-size: 14px;
+      color: #666;
+      text-decoration: underline;
+    }
+
+    .view-native-link:hover {
+      color: #5b3da1;
+    }
+
+    .resume-viewer-container {
+      width: 100%;
+      height: 75vh; /* Falls back cleanly on various monitor heights */
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      background-color: #fff;
+    }
+
+    .resume-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portfolio-container">
+    <!-- Left Column Navigation Block -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+   
+    <!-- Right Column Main Text Content Block -->
+    <main>
+      <div class="intro-header">
+        Resume
+      </div>
+
+      <!-- Action panel giving explicit options -->
+      <div class="resume-actions">
+        <a href="Paladhi Resume.pdf" download="Akshera Paladhi Resume" class="download-btn">
+          Download PDF
+        </a>
+        <a href="Paladhi Resume.pdf" target="_blank" class="view-native-link">
+          Open in New Tab
+        </a>
+      </div>
+
+      <!-- Embedded Interactive Frame for Document Viewing -->
+      <div class="resume-viewer-container">
+        <iframe 
+          src="Paladhi Resume.pdf" 
+          class="resume-frame"
+          title="Akshera Paladhi Resume Preview">
+          <p>Your browser does not support embedded PDFs. Please use the download link above to view the file.</p>
+         iframe>
+      </div>
+
+      <!-- Integrated Dashed Footer -->
+      <footer>
+        <div class="footer-left">
+          <a href="#" id="copy-email">Email</a>
+          <a href="https://github.com/aksherap1" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/akshera-paladhi/" target="_blank">Linkedin</a>
+          <a href="https://gitlab.com/apaladhi" target="_blank">Gitlab</a>
+        </div>
+        <div class="footer-right">
+          <span>Bay Area, CA</span> &nbsp;·&nbsp; <span>© 2026 Akshera Paladhi</span>
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("copy-email").addEventListener("click", function(e) {
+      e.preventDefault();
+      navigator.clipboard.writeText("apaladhi@ucsc.edu")
+        .then(() => alert("Email copied to clipboard!"))
+        .catch(err => console.error("Failed to copy email: ", err));
+    });
+  </script>
+</body>
+</html>
