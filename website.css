@@ -1,4 +1,4 @@
-/* Reset & Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: 'Inter', -apple-system, sans-serif;
   color: #111;
   background-color: #fff;
   line-height: 1.6;
@@ -47,7 +47,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #111;
+  color: #5b3da1;
 }
 
 /* Active Page State */
@@ -110,13 +110,13 @@ footer {
 }
 
 footer a {
-  color: #0044cc;
+  color: #5b3da1;
   text-decoration: underline;
   margin-right: 15px;
 }
 
 footer a:hover {
-  color: #002288;
+  color: #5b3da1;
 }
 
 .footer-right {
