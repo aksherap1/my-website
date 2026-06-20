@@ -9,6 +9,7 @@
 <body>
 
   <div class="portfolio-container">
+    <!-- Left Column Navigation Block -->
     <header>
       <nav>
         <ul>
@@ -19,12 +20,19 @@
       </nav>
     </header>
    
+    <!-- Right Column Main Text Content Block -->
     <main>
       <div class="intro-header">
-        I've worked on
+        i've worked on
       </div>
 
       <div class="experience-list">
+        <h3>citris initiative for drone education and research (cider) — summer pilot trainee</h3>
+        <span class="date">june 2026 – present</span>
+        <ul>
+          <li>stay tuned! excited to learn about aerial stuff and drones!</li>
+        </ul>
+
         <h3>uc santa cruz institute of particle physics (scipp) — undergraduate researcher</h3>
         <span class="date">june 2025 – present</span>
         <ul>
@@ -54,6 +62,7 @@
         </ul>
       </div>
 
+      <!-- Integrated Dashed Footer -->
       <footer>
         <div class="footer-left">
           <a href="#" id="copy-email">email</a>
@@ -71,7 +80,7 @@
   <script>
     document.getElementById("copy-email").addEventListener("click", function(e) {
       e.preventDefault();
-      navigator.clipboard.writeText("apaladhi@ucsc.edu.com")
+      navigator.clipboard.writeText("apaladhi@ucsc.edu")
         .then(() => alert("Email copied to clipboard!"))
         .catch(err => console.error("Failed to copy email: ", err));
     });
