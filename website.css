@@ -128,6 +128,17 @@ body::after {
   z-index: 1;
 }
 
+.github-tip {
+  color: var(--text-muted);
+  font-size: 13.5px;
+  margin-bottom: 24px;
+}
+.github-tip em {
+  color: var(--accent-purple);
+  font-style: normal;
+  font-weight: 500;
+}
+
 /* Left Sidebar - Sticky Navigation */
 header {
   grid-column: 1;
