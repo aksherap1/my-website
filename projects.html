@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Akshera Paladhi</title>
+  <!-- Custom Image Favicon -->
+  <link rel="icon" type="image/png" href="A.png">
+  <link rel="stylesheet" href="website.css">
+  <style>
+    /* Keeps titles looking clean while remaining clickable */
+    .project-link {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .project-link:hover {
+      color: #5b3da1;
+      text-decoration: underline;
+    }
+
+    /* Top Links Block (Highly Accessible) */
+    .top-links-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 15px;
+      margin-bottom: 20px;
+      border-bottom: 1px dashed #ddd;
+      font-size: 14px;
+    }
+
+    .top-links-left {
+      display: flex;
+      gap: 15px;
+    }
+
+    .top-links-left a {
+      color: #5b3da1;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .top-links-left a:hover {
+      text-decoration: underline;
+    }
+
+    .top-links-right {
+      color: #666;
+    }
+
+    /* Centered Footer */
+    footer {
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      padding: 20px 0;
+      border-top: 1px dashed #ddd;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="portfolio-container">
+    <!-- Left Column Navigation Block -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="experience.html">Experiences</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="resume.html">Resume</a></li>
+        </ul>
+      </nav>
+    </header>
+   
+    <!-- Right Column Main Text Content Block -->
+    <main>
+
+      <!-- Relocated Top Links Bar -->
+      <div class="top-links-bar">
+        <div class="top-links-left">
+          <a href="#" id="copy-email">Email</a>
+          <a href="https://github.com/aksherap1" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/akshera-paladhi/" target="_blank">Linkedin</a>
+          <a href="https://gitlab.com/apaladhi" target="_blank">Gitlab</a>
+        </div>
+      </div>
+
+      <div class="intro-header">
+        Everything I've built...
+      </div>
+      <div class="content-block">
+        <p>Diving into digital logic completely changed how I look at hardware—there’s nothing cooler than watching 0s and 1s track in real time and seeing D flip-flops keep everything in sync on a clock edge. Lately, I've taken that hands-on energy into robotics and drones: dialing in CAD models, designing for DFM/DFA, and collecting flight data in the field.</p>
+        <p class="github-tip">↳ <em>Click any project title to check out the schematics, CAD files, and GitHub repo!</em></p>
+      </div>
+      
+      <div class="experience-list">
+        <div class="content-block">
+          <h3><a href="https://github.com/aksherap1/Interactive-Alarm-Clock" target="_blank" class="project-link">Interactive Household Robotics (Lamp & Alarm Clock) ↗</a></h3>
+          <span class="date">June 2026 – Present</span>
+          <p>Designed expressive 6-DOF desktop companion robots in Onshape with custom 3D-printed linkages. Engineered a 2-layer KiCad PCB powered by an ESP32-S3 with onboard DC-DC regulation to drive daisy-chained micro servos cleanly.</p>
+        </div>
+      
+        <div class="content-block">
+          <h3><a href="https://github.com/aksherap1/Autonomous-Drone-Warehouse-Surveyor" target="_blank" class="project-link">Autonomous Drone Warehouse Surveyor ↗</a></h3>
+          <span class="date">June 2026 – Present</span>
+          <p>Modeled an indoor multicopter airframe in SolidWorks and converted the assembly into URDF/USD formats. Built physics, collision models, and autonomous waypoint navigation inside NVIDIA Isaac Sim using ActionGraph.</p>
+        </div>
+      
+        <div class="content-block">
+          <h3>Osmosis Digital Logic Game</h3>
+          <span class="date">May 2026 – June 2026</span>
+          <p>Built a real-time molecular osmosis simulation game entirely in VHDL. Designed synchronous FSMs with D flip-flop register arrays and wrote custom display driver logic with strict horizontal/vertical pixel timing constraints.</p>
+        </div>
+      
+        <div class="content-block">
+          <h3>Stop It Digital Logic Game</h3>
+          <span class="date">April 2026 – May 2026</span>
+          <p>Synthesized a fast-paced reaction game onto a Xilinx FPGA using Verilog. Implemented an 8-bit Fibonacci LFSR for pseudo-random targets, a one-hot encoded 7-state Moore FSM, and modular LED shifting circuits verified in Vivado.</p>
+        </div>
+      
+        <div class="content-block">
+          <h3><a href="https://github.com/aksherap1/Air-Mouse-Project" target="_blank" class="project-link">Air Mouse (ESP32 + MPU-6050) ↗</a></h3>
+          <span class="date">Dec 2025 – Present</span>
+          <p>Built a wireless motion mouse using an ESP32 and MPU-6050 over Bluetooth HID. Wrote custom C++ calibration/filtering algorithms and routed a compact, multi-layer surface-mount PCB in KiCad.</p>
+        </div>
+      
+        <div class="content-block">
+          <h3><a href="https://github.com/IndiraMariya/ArduinoContest" target="_blank" class="project-link">Music Visualizer — Wearable Audio-to-Haptic Device ↗</a></h3>
+          <span class="date">Apr 2025 – Aug 2025</span>
+          <p>Engineered an assistive wearable translating real-time small-signal audio into haptic vibration patterns. Implemented an in-place Fixed FFT-8 algorithm on an 8-bit Arduino to map frequency bins across custom motor drivers.</p>
+        </div>
+      
+        <div class="content-block">
+          <h3><a href="https://github.com/aksherap1/BattleBoats" target="_blank" class="project-link">BattleBoats Project ↗</a></h3>
+          <span class="date">May 2025 – Jun 2025</span>
+          <p>Created a multiplayer Battleship game on a 32-bit PIC32 MCU using embedded C and UART. Built a dual-layer FSM separating control handshakes from gameplay data, complete with a hashed key cryptographic protocol to prevent packet tampering.</p>
+        </div>
+      
+        <div class="content-block">
+          <h3><a href="https://github.com/aksherap1/AI-Model" target="_blank" class="project-link">Phishing Detection AI Model ↗</a></h3>
+          <span class="date">Jun 2023 – Sep 2023</span>
+          <p>Developed a Python machine learning pipeline with NLP tokenization to classify malicious email metadata and detect suspicious message intent.</p>
+        </div>
+      </div>
+      </div>
+
+      <!-- Footer Area -->
+      <footer>
+        <span>Bay Area, CA</span> &nbsp;·&nbsp; <span>© 2026 Akshera Paladhi</span>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById("copy-email").addEventListener("click", function(e) {
+      e.preventDefault();
+      navigator.clipboard.writeText("apaladhi@ucsc.edu")
+        .then(() => alert("Email copied to clipboard!"))
+        .catch(err => console.error("Failed to copy email: ", err));
+    });
+  </script>
+</body>
+</html>
