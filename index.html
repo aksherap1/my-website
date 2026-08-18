@@ -7,52 +7,53 @@
   <!-- Custom Image Favicon -->
   <link rel="icon" type="image/png" href="A.png">
   <link rel="stylesheet" href="website.css">
-  <link rel="stylesheet" href="website.css">
   <style>
-    /* Top Links Block (Highly Accessible) */
+    /* Top Links Block */
     .top-links-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-bottom: 15px;
-      margin-bottom: 20px;
-      border-bottom: 1px dashed #ddd;
+      margin-bottom: 24px;
+      border-bottom: 1px dashed var(--border-subtle, #eae6f5);
       font-size: 14px;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .top-links-left {
       display: flex;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     .top-links-left a {
-      color: #5b3da1;
+      color: var(--accent-purple, #6527e7);
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.15s ease;
     }
 
     .top-links-left a:hover {
       text-decoration: underline;
-    }
-
-    .top-links-right {
-      color: #666;
+      color: var(--accent-purple-hover, #4e18be);
     }
 
     /* Centered Footer */
     footer {
       text-align: center;
-      color: #666;
-      font-size: 14px;
+      color: var(--text-muted, #71717e);
+      font-size: 13px;
       padding: 20px 0;
-      border-top: 1px dashed #ddd;
-      margin-top: 20px;
+      border-top: 1px dashed var(--border-subtle, #eae6f5);
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <div class="portfolio-container">
+    <!-- Navigation Header -->
     <header>
       <nav>
         <ul>
@@ -64,9 +65,9 @@
       </nav>
     </header>
    
+    <!-- Main Content Area -->
     <main>
-
-      <!-- Relocated Top Links Bar -->
+      <!-- Top Links Bar -->
       <div class="top-links-bar">
         <div class="top-links-left">
           <a href="#" id="copy-email">Email</a>
@@ -81,9 +82,7 @@
       </div> 
       
       <div class="content-block">
-        <p>Hey! I am Akshera Paladhi, an Electrical Engineering student with a minor in Astrophysics at UC Santa Cruz. I have learned a lot over the past two years, and I want to apply my background to the flight industry, space exploration, or ocean mystery—that's the ultimate dream! I also love quantum computing and finding ways to integrate it with my aerospace interests. To push these goals forward, I recently joined CITRIS this summer to learn all about aerodynamics and drone stuff through hands-on pilot training. Outside thism I've been sending cold emails and hopping on coffee chats with awesome engineers and leaders at Muon Space, Honeywell, and RTX—with a definite highlight being a chat with Irene Makris, President of Power & Controls at Collins Aerospace!</p>
-      </div>
-
+        <p>Hey! I am Akshera Paladhi, an Electrical Engineering student with a minor in Astrophysics at UC Santa Cruz. I want to apply my background to the flight industry, space exploration, and ocean technology. I am also passionate about quantum computing and finding ways to integrate it with aerospace systems. To push these goals forward, I joined CITRIS this summer to learn aerodynamics and autonomous flight through hands-on drone pilot training. Outside of this, I love connecting with engineers and industry leaders across Muon Space, Honeywell, and RTX—with a highlight being a discussion with Irene Makris, President of Power &amp; Controls at Collins Aerospace!</p>
       </div>
 
       <!-- Footer Area -->

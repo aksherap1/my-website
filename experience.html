@@ -3,56 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Akshera Paladhi</title>
+  <title>Experiences | Akshera Paladhi</title>
   <!-- Custom Image Favicon -->
   <link rel="icon" type="image/png" href="A.png">
   <link rel="stylesheet" href="website.css">
-  <link rel="stylesheet" href="website.css">
   <style>
-    /* Top Links Block (Highly Accessible) */
+    /* Top Links Block */
     .top-links-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-bottom: 15px;
-      margin-bottom: 20px;
-      border-bottom: 1px dashed #ddd;
+      margin-bottom: 24px;
+      border-bottom: 1px dashed var(--border-subtle, #eae6f5);
       font-size: 14px;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .top-links-left {
       display: flex;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     .top-links-left a {
-      color: #5b3da1;
+      color: var(--accent-purple, #6527e7);
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.15s ease;
     }
 
     .top-links-left a:hover {
       text-decoration: underline;
-    }
-
-    .top-links-right {
-      color: #666;
+      color: var(--accent-purple-hover, #4e18be);
     }
 
     /* Centered Footer */
     footer {
       text-align: center;
-      color: #666;
-      font-size: 14px;
+      color: var(--text-muted, #71717e);
+      font-size: 13px;
       padding: 20px 0;
-      border-top: 1px dashed #ddd;
-      margin-top: 20px;
+      border-top: 1px dashed var(--border-subtle, #eae6f5);
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
   <div class="portfolio-container">
+    <!-- Left Column Navigation Block -->
     <header>
       <nav>
         <ul>
@@ -64,9 +65,9 @@
       </nav>
     </header>
    
+    <!-- Main Content Block -->
     <main>
-
-      <!-- Relocated Top Links Bar -->
+      <!-- Top Links Bar -->
       <div class="top-links-bar">
         <div class="top-links-left">
           <a href="#" id="copy-email">Email</a>
@@ -79,23 +80,22 @@
       <div class="intro-header">
         Where I’ve grown...
       </div> 
-      
 
       <div class="experience-list">
         <div class="content-block">
           <h3>CITRIS Initiative for Drone Education and Research (CIDER) — Santa Cruz, CA</h3>
-          <span class="date">June 2026 – Present</span>
+          <span class="date">Drone Researcher | June 2026 – Present</span>
           <p>Designing custom 3D-printed multicopters, wiring onboard electronics, and conducting autonomous flight research with an FAA Part 107 remote pilot license.</p>
         </div>
       
         <div class="content-block">
           <h3>UCSC Institute of Particle Physics (SCIPP) — Santa Cruz, CA</h3>
           <span class="date">Undergraduate Researcher | June 2025 – Present</span>
-          <p>Simulating front-end electronics in LTspice for proton beam diagnostics at Los Alamos National Lab (LANL). Programming Arduino RP2040 microcontrollers in C and scripting automated Python test suites in Linux.</p>
+          <p>Simulating front-end electronics in LTspice for proton beam diagnostics at Los Alamos National Lab (LANL). Programming RP2040 microcontrollers in C and scripting automated Python test suites in Linux.</p>
         </div>
       
         <div class="content-block">
-          <h3>UC Santa Cruz Quantum Computing – Santa Cruz, CA</h3>
+          <h3>UC Santa Cruz Quantum Computing — Santa Cruz, CA</h3>
           <span class="date">Vice President / Researcher | August 2025 – Present</span>
           <p>Leading research in Position-Based Quantum Cryptography (PBQC) to develop secure authentication protocols while collaborating across UC campuses and the Quantum Coalition.</p>
           <a href="https://ucscquantum.substack.com/p/cybersecurity-in-the-quantum-space" class="blog-link" target="_blank" rel="noopener noreferrer">Read the blog post →</a>
@@ -103,7 +103,7 @@
       
         <div class="content-block">
           <h3>Learning Support Services — Santa Cruz, CA</h3>
-          <span class="date">Engineering Tutor | Sept 2025 – Present</span>
+          <span class="date">Engineering Peer Tutor | Sept 2025 – Present</span>
           <p>Mentoring undergraduate engineering students weekly on digital logic, CMOS circuit design, Boolean algebra, and RISC-V computer architecture.</p>
         </div>
       

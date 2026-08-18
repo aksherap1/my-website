@@ -15,48 +15,49 @@
       transition: color 0.2s ease;
     }
     .project-link:hover {
-      color: #5b3da1;
+      color: var(--accent-purple, #6527e7);
       text-decoration: underline;
     }
 
-    /* Top Links Block (Highly Accessible) */
+    /* Top Links Block */
     .top-links-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding-bottom: 15px;
-      margin-bottom: 20px;
-      border-bottom: 1px dashed #ddd;
+      margin-bottom: 24px;
+      border-bottom: 1px dashed var(--border-subtle, #eae6f5);
       font-size: 14px;
+      flex-wrap: wrap;
+      gap: 12px;
     }
 
     .top-links-left {
       display: flex;
       gap: 15px;
+      flex-wrap: wrap;
     }
 
     .top-links-left a {
-      color: #5b3da1;
+      color: var(--accent-purple, #6527e7);
       text-decoration: none;
       font-weight: 500;
+      transition: color 0.15s ease;
     }
 
     .top-links-left a:hover {
       text-decoration: underline;
-    }
-
-    .top-links-right {
-      color: #666;
+      color: var(--accent-purple-hover, #4e18be);
     }
 
     /* Centered Footer */
     footer {
       text-align: center;
-      color: #666;
-      font-size: 14px;
+      color: var(--text-muted, #71717e);
+      font-size: 13px;
       padding: 20px 0;
-      border-top: 1px dashed #ddd;
-      margin-top: 20px;
+      border-top: 1px dashed var(--border-subtle, #eae6f5);
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -75,10 +76,9 @@
       </nav>
     </header>
    
-    <!-- Right Column Main Text Content Block -->
+    <!-- Main Content Block -->
     <main>
-
-      <!-- Relocated Top Links Bar -->
+      <!-- Top Links Bar -->
       <div class="top-links-bar">
         <div class="top-links-left">
           <a href="#" id="copy-email">Email</a>
@@ -144,7 +144,6 @@
           <span class="date">Jun 2023 – Sep 2023</span>
           <p>Developed a Python machine learning pipeline with NLP tokenization to classify malicious email metadata and detect suspicious message intent.</p>
         </div>
-      </div>
       </div>
 
       <!-- Footer Area -->
